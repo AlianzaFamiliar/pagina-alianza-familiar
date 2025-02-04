@@ -1,0 +1,58 @@
+.header-main {
+
+    display: flex;
+    gap: 20px;
+
+}
+
+.nav-items {
+
+    display: flex;
+    gap: 10px;
+
+}
+
+.nav-item {
+
+    display: inline-block;
+}
+
+.nav {
+    display: inline-block;
+    background-color: blanchedalmond;
+    padding: 10px;
+    border-radius: 10px;
+    width: 700px;
+
+}
+
+.container-logo {
+
+    display: inline-block;
+
+}
+
+.container-redes {
+
+    width: 200px;
+    display: inline-block;
+    background-color: blanchedalmond;
+    padding: 10px;
+
+}
+
+.container-img {
+    display: inline-block;
+}
+
+.container-title {
+
+    width: 400px;
+    display: inline-block;
+}
+
+main {
+
+    padding: 10px;
+
+}
