@@ -1,17 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <title>Document</title>
 </head>
+
 <body>
-    
+
     <header class="header-main">
 
         <div class="container-logo">
-            <img src="" alt="Alianza Familiar">
+            <img src="Assets/alianza entidad.png" alt="Alianza Familiar" id="logo-alianza">
         </div>
 
         <nav class="nav">
@@ -38,34 +40,183 @@
         </nav>
 
         <div class="container-redes">
-            <p>Redes</p>
+            <p>Siguenos</p>
+            <div>
+                <img src="Assets/facebook (1)_poster_.png" alt="Facebook" class="logo-redes">
+                <img src="Assets/instagram_poster_.png" alt="Instagram" class="logo-redes" >
+                <img src="Assets/tiktok_poster_.png" alt="Tiktok" class="logo-redes">    
+            </div>
+            
+            
         </div>
     </header>
 
-    <main>
+    <main class="main">
+        <div class="main-container">
+            <div class="container-img">
+                <img src="Assets/credito-hipotecario.png" alt="Casa" id="img-main">
 
-        <div class="container-img">
-            <img src="https://placehold.co/400x400/EEE/31343C" alt="Casa">
+            </div>
+
+            <div class="container-title">
+                <div>
+                    <h1><span class="weight title-size">Tramitamos tu crédito</span>
+                        <br>
+                        para tu nuevo hogar
+                    </h1>
+                </div>
+                <div class="">
+                    <img src="Assets/fovissste-1.png" alt="Fovissste" class="logo-creditos">
+                    <img src="Assets/infonav-1.png" alt="Infonavit" class="logo-creditos">
+                    <img src="Assets/hipotecario-bancario.png" alt="Credito Hipotecario Bancario" class="logo-creditos">
+
+                </div>
+                <div class="container-bancos">
+                    <div class="container-img-bancos">
+                        <img src="Assets/Scotiabank.png" alt="Scotiabank" class="logo-bancos">
+                        <img src="Assets/HSBC.png" alt="HSBC" class="logo-bancos">
+                        <img src="Assets/Santander.png" alt="Santander" class="logo-bancos">
+                        <img src="Assets/Banorte.png" alt="Banorte" class="logo-bancos">
+                    </div>
+                    <p>Trabajamos con todos los bancos</p>
+                </div>
+                <button id="btn-contactanos">Contactanos</button>
+            </div>
+        </div>
+
+        <div class="container-description">
+
+            <div class="title-description">
+                <h2>
+                    <span class="weight">
+                        Somos SOFOM Autorizada FOVISSSTE
+                    </span>
+                    <br>
+                    Tramitamos todos los tipos de Credito
+                </h2>
+            </div>
+            <div class="description">
+                <div class="description-ic">
+                    <div>
+                        <img src="" alt="Casa con un circulo hecho de flechas">
+                        <p>Inscription continua</p>
+                    </div>
+                    <div>
+                        <p>Sin sorteos</p>
+                        <p>Sin convocatorias</p>
+                    </div>
+                </div>
+
+                <div class="line-servicios">
+
+                    <div class="line-img-servicios">
+
+                        <img src="" alt="credito tradicional">
+                    </div>
+                    <div class="line-img-servicios">
+
+                        <img src="" alt="Credito tradicional en pesos">
+                    </div>
+                    <div class="line-img-servicios">
+
+                        <img src="" alt="Construyes tu casa">
+                    </div>
+                    <div class="line-img-servicios">
+
+                        <img src="" alt="Credito conyugal">
+                    </div>
+                    <div class="line-img-servicios">
+
+                        <img src="" alt="Credito pensionados">
+                    </div>
+                    <div class="line-img-servicios">
+
+                        <img src="" alt="Credito mancomunado">
+                    </div>
+                    <div class="line-img-servicios">
+
+                        <img src="" alt="Fovissste Infonavit individual">
+                    </div>
+                    <div class="line-img-servicios">
+
+                        <img src="" alt="Fovissste para todos">
+                    </div>
+
+                </div>
+
+                <div class="description-footer">
+
+                    <img src="" alt="Todos los tramites son gratuitos">
+                    <p>
+                        TODOS LOS
+                        <br>
+                        <span class="weight">TRÁMITES SON GRATUITOS</span>
+                    </p>
+                </div>
+
+
+            </div>
+        </div>
+
+        <div class="container-contactanos">
+
+            <div class="contactanos-title">
+
+                <h2>Trabajamos a nivel nacional</h2>
+                <button id="btn-sucursales">Sucursales</button>
+
+            </div>
+
+            <div class="container-contacto">
+
+                <h2>Contáctanos</h2>
+
+                <div class="container-datos-contacto">
+                    <div class="container-form">
+
+                        <form action="" id="form">
+                            
+                            <label for="nombre">Nombre Completo</label>
+                            <input type="text" name="nombre" id="nombre" class="input-main" required>
+
+                            <label for="correo electronico">Correo electronico</label>
+                            <input type="email" name="correo electronico" id="correo-electronico" class="input-main" required> 
+
+                            <label for="telefono">Telefono</label>
+                            <input type="number" name="telefono" id="telefono" class="input-main" required>
+
+                            <label for="curp">Curp (opcional)</label>
+                            <input type="text" name="curp" id="curp" class="input-main">
+
+                            <label for="estado">Estado</label>
+                            <select name="estado" id="Estado" class="input-main" required>
+                                
+                            </select>
+
+                            <div>
+                            
+                            <label for=""></label>
+                            <input type="radio" name="tipo-credito" id="tipo-credito" class="input-main-radio">
+                            <label for=""></label>
+                            <input type="radio" name="tipo-credito" id="tipo-credito" class="input-main-radio">
+                            <label for=""></label>  
+                            <input type="radio" name="tipo-credito" id="tipo-credito" class="input-main-radio">
+                            
+                            </div>
+
+                            <button type="submit" id="btn-enviar-form">Enviar</button>
+                        </form>
+
+                    </div>
+                    <div class="container-datos">
+
+                    </div>
+                </div>
+
+            </div>
 
         </div>
 
-        <div class="container-title">
-            <div>
-                <h1><span>Tramitamos tu crédito</span> para tu nuevo hogar</h1>
-            </div>
-            <div>
-                <img src="" alt="Fovissste">
-                <img src="" alt="Infonavit">
-                <img src="" alt="Credito Hipotecario Bancario">
-            </div>
-            <div>
-                <img src="" alt="Scotiabank">
-                <img src="" alt="HSBC">
-                <img src="" alt="Santander">
-                <img src="" alt="Banorte">
-            </div>
-            <button>Contactanos</button>
-        </div>
 
     </main>
 
@@ -73,4 +224,5 @@
 
     </footer>
 </body>
+
 </html>
