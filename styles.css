@@ -1,3 +1,8 @@
+#navbar {
+    width: 100%;
+    height: 100px;
+}
+
 p {
     margin: 0;
 }
@@ -6,14 +11,51 @@ h2 {
     margin: 0;
 }
 
+ul {
+    margin: 0px;
+    padding: 0%;
+}
+
+select {
+
+    padding: 0px;
+}
+
+option {
+    padding: 2px;
+}
+
+li {
+
+    padding: 0;
+}
+
+body {
+    margin: 0;
+}
+
+hr {
+
+    margin: 0;
+
+}
+
 .main {
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
+    padding: 0;
 }
 
 /* ---------------------------------------------------------------------*/
 /*Empieza main-container*/
+
+.container-creditos {
+
+    display: flex;
+    gap: 50px;
+
+}
 
 #logo-alianza {
 
@@ -23,8 +65,10 @@ h2 {
 
 .header-main {
 
+    margin-top: 10px;
+    width: 100%;
     display: flex;
-    gap: 20px;
+    gap: 40px;
     justify-content: center;
 
 }
@@ -35,28 +79,61 @@ h2 {
     width: 100%;
     align-items: center;
     justify-content: center;
-    gap: 300px;
+    gap: 150px;
 
 }
 
 .nav-items {
 
     display: flex;
-    gap: 10px;
+    gap: 30px;
+    justify-content: center;
+}
+
+.nav-item:focus {
+
+    background-color: #00757f;
 
 }
 
 .nav-item {
 
     display: inline-block;
+    background: transparent;
+    border-radius: 15px;
+    padding: 5px;
+}
+
+.menu-link {
+
+    border: none;
+
+    color: white;
+    font-weight: 700;
+    width: 150px;
+    overflow: hidden;
+
+}
+
+.nav-link {
+
+    display: inline-block;
+    color: white;
+    font-weight: 700;
+
 }
 
 .nav {
-    display: inline-block;
-    background-color: blanchedalmond;
+    display: inline-flex;
+    background-image: linear-gradient(-60deg, rgba(17, 160, 174, 1) 50%, rgba(69, 226, 215, 1) 100%);
     padding: 10px;
     border-radius: 50px;
-    width: 700px;
+    width: 950px;
+    font-weight: 900;
+    color: white;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
 
 }
 
@@ -71,12 +148,12 @@ h2 {
     width: 200px;
     height: 60px;
     display: inline-flex;
-    background-color: blanchedalmond;
+    background-image: linear-gradient(-60deg, rgba(17, 160, 174, 1) 50%, rgba(69, 226, 215, 1) 100%);
     justify-content: center;
     align-items: center;
-    gap: 15px;
+    color: white;
     border-radius: 50px;
-
+    flex-direction: column;
 }
 
 .logo-redes {
@@ -144,7 +221,8 @@ main {
 
     width: 200px;
     height: 60px;
-    border: blue solid;
+    border: solid 3px #11a0ae;
+    color: #11a0ae;
     border-radius: 60px;
     font-weight: 900;
     font-size: 24px;
@@ -152,9 +230,38 @@ main {
 
 }
 
+#btn-contactanos:hover {
+
+    background-color: #11a0ae;
+    color: white;
+
+}
+
 .weight {
 
     font-weight: 700;
+}
+
+.size-lg {
+
+    font-size: 50px;
+}
+
+.size-md {
+
+    font-size: 27px;
+
+}
+
+.color-secondary {
+
+    color: #00757f;
+}
+
+.color-primary {
+
+    color: #11a0ae ;
+
 }
 
 .title-size {
@@ -197,7 +304,8 @@ main {
 
 .title-description {
 
-    background-color: #ccc;
+    background-image: linear-gradient(-60deg, rgba(17, 160, 174, 1) 50%, rgba(69, 226, 215, 1) 100%);
+    color: white;
     text-align: center;
     padding: 10px 0 10px 0;
 }
@@ -262,7 +370,8 @@ main {
     align-items: center;
     gap: 20px;
     width: 100%;
-    background-color: #ccc;
+    background-image: linear-gradient(-60deg, rgba(17, 160, 174, 1) 50%, rgba(69, 226, 215, 1) 100%);
+    color: white;
     padding: 20px;
 
 }
@@ -270,11 +379,22 @@ main {
 #btn-sucursales {
 
     width: 300px;
-    padding: 20px;
+    padding: 10px;
     border-radius: 30px;
     border: none;
     font-weight: 900;
+    font-size: 30px;
+    color: white;
+    border: solid white;
+    background: transparent;
 
+}
+
+#btn-sucursales:hover {
+
+
+    background-color: #00757f;
+    border: #00757f solid;
 }
 
 .container-contacto {
@@ -284,12 +404,18 @@ main {
     width: 100%;
     text-align: center;
     justify-content: center;
+    gap: 60px;
 
 }
 
 .container-form {
-
-    width: 430px;
+    
+    display: inline-flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    width: 600px;
 
 }
 
@@ -297,11 +423,36 @@ main {
 
     display: inline-block;
     width: 300px;
+    height: 30px;
+    background-color: #11a0ae;
+    border-radius: 5px;
+    border: black solid 1px;
+    padding: 2px;
+}
+
+.label-input-main {
+
+    display: inline-block;
+    width: 200px;
+    text-align: left;
+
+}
+
+.input-main:hover {
+
+    background-color: white;
+
 
 }
 
 .input-main-radio {
     display: inline-block;
+}
+
+#terminos-condiciones {
+
+    height: 100%;
+
 }
 
 #form {
@@ -311,6 +462,7 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
 
 }
 
@@ -321,4 +473,47 @@ main {
     width: 100px;
     border: none;
     font-weight: 700;
+}
+
+.container-datos-contacto {
+
+    display: flex;
+    gap: 100px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+
+
+}
+
+.container-datos {
+
+    display: inline-flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    width: 900px;
+    height: 337px;
+
+}
+
+.container-img-contacto {
+
+    display: inline-block;
+
+}
+
+.container-nuestros-datos{
+
+    width: 800px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    gap: 30px;
+
+}
+
+.red-social-item {
+
+    display: inline-block;
+
 }

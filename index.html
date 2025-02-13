@@ -10,46 +10,7 @@
 
 <body>
 
-    <header class="header-main">
-
-        <div class="container-logo">
-            <img src="Assets/alianza entidad.png" alt="Alianza Familiar" id="logo-alianza">
-        </div>
-
-        <nav class="nav">
-            <ul class="nav-items">
-                <li class="nav-item">
-                    <a class="nav-link" href="">Inicio</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="">Créditos Fovissste</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="">Créditos Infonavit</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="">Créditos Bancarios</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="">Servicios Adicionales</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="">Sucursales</a>
-                </li>
-            </ul>
-        </nav>
-
-        <div class="container-redes">
-            <p>Siguenos</p>
-            <div>
-                <img src="Assets/facebook (1)_poster_.png" alt="Facebook" class="logo-redes">
-                <img src="Assets/instagram_poster_.png" alt="Instagram" class="logo-redes" >
-                <img src="Assets/tiktok_poster_.png" alt="Tiktok" class="logo-redes">    
-            </div>
-            
-            
-        </div>
-    </header>
+    <iframe src="navbar.html" frameborder="0" id="navbar"></iframe>
 
     <main class="main">
         <div class="main-container">
@@ -65,7 +26,7 @@
                         para tu nuevo hogar
                     </h1>
                 </div>
-                <div class="">
+                <div class="container-creditos">
                     <img src="Assets/fovissste-1.png" alt="Fovissste" class="logo-creditos">
                     <img src="Assets/infonav-1.png" alt="Infonavit" class="logo-creditos">
                     <img src="Assets/hipotecario-bancario.png" alt="Credito Hipotecario Bancario" class="logo-creditos">
@@ -80,14 +41,14 @@
                     </div>
                     <p>Trabajamos con todos los bancos</p>
                 </div>
-                <button id="btn-contactanos">Contactanos</button>
+                <button id="btn-contactanos">Contáctanos</button>
             </div>
         </div>
 
         <div class="container-description">
 
             <div class="title-description">
-                <h2>
+                <h2 class="size-lg">
                     <span class="weight">
                         Somos SOFOM Autorizada FOVISSSTE
                     </span>
@@ -98,12 +59,12 @@
             <div class="description">
                 <div class="description-ic">
                     <div>
-                        <img src="" alt="Casa con un circulo hecho de flechas">
-                        <p>Inscription continua</p>
+                        <img src="Assets/inscripcion_continua.png" alt="Casa con un circulo hecho de flechas">
                     </div>
-                    <div>
-                        <p>Sin sorteos</p>
-                        <p>Sin convocatorias</p>
+                    <hr>
+                    <div class="weight">
+                        <p class="weight size-lg color-secondary">Sin sorteos</p>
+                        <p class="weight size-lg color-primary">Sin convocatorias</p>
                     </div>
                 </div>
 
@@ -111,47 +72,43 @@
 
                     <div class="line-img-servicios">
 
-                        <img src="" alt="credito tradicional">
+                        <img src="Assets/Credito Tradicional.png" alt="credito tradicional">
                     </div>
                     <div class="line-img-servicios">
 
-                        <img src="" alt="Credito tradicional en pesos">
+                        <img src="Assets/tradipesos.png" alt="Credito tradicional en pesos">
                     </div>
                     <div class="line-img-servicios">
 
-                        <img src="" alt="Construyes tu casa">
+                        <img src="Assets/construyestucasa.png" alt="Construyes tu casa">
                     </div>
                     <div class="line-img-servicios">
 
-                        <img src="" alt="Credito conyugal">
+                        <img src="Assets/credito-conyugal.png" alt="Credito conyugal">
                     </div>
                     <div class="line-img-servicios">
 
-                        <img src="" alt="Credito pensionados">
+                        <img src="Assets/credito_pensionados.png" alt="Credito pensionados">
                     </div>
                     <div class="line-img-servicios">
 
-                        <img src="" alt="Credito mancomunado">
+                        <img src="Assets/credito_mancomunado.png" alt="Credito mancomunado">
                     </div>
                     <div class="line-img-servicios">
 
-                        <img src="" alt="Fovissste Infonavit individual">
+                        <img src="Assets/fov-indivual.png" alt="Fovissste Infonavit individual">
                     </div>
                     <div class="line-img-servicios">
 
-                        <img src="" alt="Fovissste para todos">
+                        <img src="Assets/fpt.png" alt="Fovissste para todos">
                     </div>
 
                 </div>
 
                 <div class="description-footer">
 
-                    <img src="" alt="Todos los tramites son gratuitos">
-                    <p>
-                        TODOS LOS
-                        <br>
-                        <span class="weight">TRÁMITES SON GRATUITOS</span>
-                    </p>
+                    <img src="Assets/todos-los-tramites-son-gratuitos.png" alt="Todos los tramites son gratuitos">
+
                 </div>
 
 
@@ -162,55 +119,157 @@
 
             <div class="contactanos-title">
 
-                <h2>Trabajamos a nivel nacional</h2>
+                <h2 class="weight size-lg">Trabajamos a nivel nacional</h2>
                 <button id="btn-sucursales">Sucursales</button>
 
             </div>
 
             <div class="container-contacto">
 
-                <h2>Contáctanos</h2>
+                <h2 class="weight size-lg color-secondary">Contáctanos</h2>
 
                 <div class="container-datos-contacto">
                     <div class="container-form">
 
                         <form action="" id="form">
-                            
-                            <label for="nombre">Nombre Completo</label>
-                            <input type="text" name="nombre" id="nombre" class="input-main" required>
-
-                            <label for="correo electronico">Correo electronico</label>
-                            <input type="email" name="correo electronico" id="correo-electronico" class="input-main" required> 
-
-                            <label for="telefono">Telefono</label>
-                            <input type="number" name="telefono" id="telefono" class="input-main" required>
-
-                            <label for="curp">Curp (opcional)</label>
-                            <input type="text" name="curp" id="curp" class="input-main">
-
-                            <label for="estado">Estado</label>
-                            <select name="estado" id="Estado" class="input-main" required>
-                                
-                            </select>
 
                             <div>
-                            
-                            <label for=""></label>
-                            <input type="radio" name="tipo-credito" id="tipo-credito" class="input-main-radio">
-                            <label for=""></label>
-                            <input type="radio" name="tipo-credito" id="tipo-credito" class="input-main-radio">
-                            <label for=""></label>  
-                            <input type="radio" name="tipo-credito" id="tipo-credito" class="input-main-radio">
-                            
+                                <label for="nombre" class="label-input-main">Nombre Completo</label>
+                                <input type="text" name="nombre" id="nombre" placeholder="Introducir Nombre"
+                                    class="input-main" required>
                             </div>
+
+                            <div>
+
+                                <label for="correo electronico" class="label-input-main">Correo electronico</label>
+                                <input type="email" name="correo electronico" id="correo-electronico"
+                                    placeholder="Introducir Correo Electrónico" class="input-main" required>
+
+                            </div>
+
+                            <div>
+
+                                <label for="telefono" class="label-input-main">Telefono</label>
+                                <input type="number" name="telefono" id="telefono" placeholder="Introducir celular"
+                                    class="input-main" required>
+
+                            </div>
+
+                            <div>
+
+                                <label for="curp" class="label-input-main">Curp (opcional)</label>
+                                <input type="text" name="curp" id="curp" placeholder="Introducir CURP (opcional)"
+                                    class="input-main">
+
+                            </div>
+
+                            <div>
+
+                                <label for="estado" class="label-input-main">Estado</label>
+                                <select name="estado" id="Estado" class="input-main" required placeholder="Estado">
+
+                                </select>
+
+                            </div>
+
+                            <div>
+
+                                <input type="radio" name="tipo-fovissste" id="tipo-fovissste" class="input-main-radio">
+                                <label for="tipo-fovissste">Crédito FOVISSSTE</label>
+
+                                <input type="radio" name="tipo-infonavit" id="tipo-infonavit" class="input-main-radio">
+                                <label for="tipo-infonavit">Crédto INFONAVIT</label>
+
+                                <input type="radio" name="tipo-bancario" id="tipo-bancario" class="input-main-radio">
+                                <label for="tipo-bancario">Crédito Bancario</label>
+
+                            </div>
+
+                            <div>
+
+                                <input type="checkbox" name="terminos-condiciones" id="terminos-condiciones">
+                                <label for="terminos-condiciones">
+                                    Acepto los términos y condiciones <br> de la política de protección de datos.
+                                </label>
+
+                            </div>
+
+
 
                             <button type="submit" id="btn-enviar-form">Enviar</button>
                         </form>
-
                     </div>
                     <div class="container-datos">
 
+                        <div class="container-nuestros-datos">
+
+                            <img src="Assets/ubicacion.png" alt="Simbolo de ubicación" class="container-img-contacto">
+                            <p class="color-primary size-md">
+                                C. Villa Nicolás Romero, 12, Conjunto San Miguel, 
+                                <br>
+                                53010, Naucalpan de Juárez, México.
+                            </p>
+
+                        </div>
+
+                        <div class="container-nuestros-datos">
+
+                            <img src="Assets/telefono.png" alt="telefono">
+                            <p class="color-primary size-md">
+                                55 5914 8503/04 ext. 102
+                                55 6477 5200 
+                            </p>
+
+                        </div>
+
+                        <div class="container-nuestros-datos">
+
+                            <img src="Assets/mail.png" alt="Sobre postal">
+                            <p class="color-primary size-md">
+                                Alianza.comercial@alianzafamiliar.mx
+                            </p>
+                        </div>
+
                     </div>
+                    
+                </div>
+                <div class="container-redes-sociales">
+
+                    <div class="red-social-item">
+                        <img src="Assets/whatsapp.png" alt="logo-Whatsapp">
+                        <p class="weight color-primary">
+                            55 6477 5200
+                        </p>
+                    </div>
+
+                    <div class="red-social-item"> 
+
+                        <img src="Assets/facebook (1).png" alt="logo-Facebook">
+                        <p class="weight color-primary">
+                            SOFOM Alianza Familiar
+                        </p>
+
+                    </div>
+
+                    <div class="red-social-item"> 
+
+                        <img src="Assets/instagram_1.png" alt="logo-instagram">
+                        <p class="weight color-primary">
+                            @alianzafamiliarsofom
+                        </p>
+
+                    </div>
+
+                    <div class="red-social-item"> 
+
+                        <img src="Assets/tiktok-1.png" alt="logo-tiktok">
+                        <p class="weight color-primary">
+                            @alianzafamiliarsofom
+                        </p>
+
+                    </div>
+                    
+
                 </div>
 
             </div>
