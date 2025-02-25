@@ -4,6 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <title>Document</title>
 </head>
@@ -41,7 +44,7 @@
                     </div>
                     <p>Trabajamos con todos los bancos</p>
                 </div>
-                <button id="btn-contactanos">Contáctanos</button>
+                <button class="btn-contactanos">Contáctanos</button>
             </div>
         </div>
 
@@ -57,17 +60,8 @@
                 </h2>
             </div>
             <div class="description">
-                <div class="description-ic">
-                    <div>
-                        <img src="Assets/inscripcion_continua.png" alt="Casa con un circulo hecho de flechas">
-                    </div>
-                    <hr>
-                    <div class="weight">
-                        <p class="weight size-lg color-secondary">Sin sorteos</p>
-                        <p class="weight size-lg color-primary">Sin convocatorias</p>
-                    </div>
-                </div>
-
+                
+                <iframe src="/Components/description-ic.html" frameborder="0" id="description-ic-component"></iframe>
                 <div class="line-servicios">
 
                     <div class="line-img-servicios">
@@ -281,8 +275,12 @@
                 Aviso de privacidad
             </h2>
 
-            <p class="justificado">
-
+            <p id="resumen">
+                Respetamos tu privacidad y protegemos tu información. 
+                <a href="#" id="leerMas">Leer más</a>
+            </p>
+            <p id="textoCompleto" class="justificado" style="display:none;">
+                
                 Para ALIANZA FAMILIAR, Sociedad Anónima Promotora de Inversión de Capital Variable, Sociedad Financiera Objeto Múltiple, Entidad Financiera No Regulada 
                 (Alianza Familiar), la confianza de todos nuestros clientes internos y externos, así como del público en general, es de suma importancia para esta empresa. 
                 Alianza Familiar es una SOFOM encargada de gestionar y originar créditos hipotecarios FOVISSSTE, INFONAVIT Y BANCARIOS. La información personal y 
@@ -302,21 +300,13 @@
                 O bien, puedes solicitar tu inscripción al Registro Público de Usuarios (REUS)a la CONDUSEF (Comisión Nacional para la Protección y Defensa de los Usuarios de Servicios Financieros). 
                 Si consideras que tu derecho de protección de datos personales ha sido vulnerado por alguna conducta de nuestros empleados o de nuestras actuaciones o respuestas, puedes contactarnos, 
                 llamando al 59148503-04 desde la Ciudad de México, en un horario de lunes a viernes de 09:00 a 18:00 Horas y sin perjuicio de tu derecho de acudir ante el IFAI.
-
-            </p>
-
-            <p class="justificado">
-
+                <br>
                 ATENTAMENTE ALIANZA FAMILIAR, SAPI de CV SOFOM ENR La empresa se reserva el derecho de modificar el presente aviso de privacidad en cualquier momento.
                 Aviso de Unidad de Atención Especializada. De conformidad con lo establecido en el artículo 50 Bis de la Ley de Protección y Defensa al Usuario de Servicios 
                 Financieros, ALIANZA FAMILIAR, SAPI. de CV SOFOM ENR, pone a tu disposición la: Unidad de Atención Especializada. En caso de que tengas alguna queja, reclamación, 
                 sugerencia o duda te pedimos que acudas a: Calle Villa Nicolás Romero #12, Colonia Conjunto San Miguel, C.P. 53010, Naucalpan de Juárez, Edo. de México En 
                 un horario de lunes a viernes de 09:00 a 18:00 Horas o enviar un correo electrónico a alianza.comercial@alianzafamiliar.mx en donde te atenderemos con gusto.
-
-            </p>
-
-            <p class="justificado">
-
+                <br>
                 Aviso de uso de recolección de información. De conformidad con lo establecido en la Ley Federal de Protección de Datos Personales en Posesión de 
                 Particulares, se pone a disposición el presente AVISO DE PRIVACIDAD en los siguientes términos: Su información personal puede ser utilizada 
                 para promover los servicios / productos que ha solicitado, informarle sobre cambios en los mismos, realizar actividades de mercadeo en general 
@@ -324,6 +314,13 @@
 
             </p>
 
+            <script>
+                document.getElementById("leerMas").addEventListener("click", function(e) {
+                    e.preventDefault();
+                    document.getElementById("textoCompleto").style.display = "block";
+                    this.style.display = "none";
+                });
+            </script>
         </div>
 
         <div class="container-logos-organismos">

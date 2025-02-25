@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
 
 #navbar {
     width: 100%;
@@ -11,12 +13,29 @@
 
 }
 
+a {
+
+    list-style: none;
+    text-decoration: none;
+
+
+}
+
 p {
     margin: 0;
 }
 
 h2 {
     margin: 0;
+}
+
+p, h2, h3, a {
+
+    font-family: "Montserrat", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+
 }
 
 ul {
@@ -39,6 +58,7 @@ li {
 }
 
 body {
+
     margin: 0;
 }
 
@@ -52,7 +72,7 @@ hr {
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
-    padding: 0;
+    padding: 0px;
 }
 
 /* ---------------------------------------------------------------------*/
@@ -91,6 +111,7 @@ hr {
 
 }
 
+
 .nav-items {
 
     display: flex;
@@ -110,6 +131,13 @@ hr {
     background: transparent;
     border-radius: 15px;
     padding: 5px;
+    
+}
+
+.nav-item:hover {
+
+    background-color: #00757f;
+
 }
 
 .menu-link {
@@ -123,11 +151,16 @@ hr {
 
 }
 
+
 .nav-link {
 
-    display: inline-block;
+    text-align: center;
+    align-items: center;
+    display: inline-flex;
     color: white;
     font-weight: 700;
+    height: 26px;
+    border-radius: 20px;
 
 }
 
@@ -219,13 +252,7 @@ hr {
 
 }
 
-main {
-
-    padding: 10px;
-
-}
-
-#btn-contactanos {
+.btn-contactanos {
 
     width: 200px;
     height: 60px;
@@ -238,7 +265,7 @@ main {
 
 }
 
-#btn-contactanos:hover {
+.btn-contactanos:hover {
 
     background-color: #11a0ae;
     color: white;
@@ -269,6 +296,12 @@ main {
 .color-primary {
 
     color: #11a0ae ;
+
+}
+
+.color-white {
+
+    color: white;
 
 }
 
@@ -377,7 +410,7 @@ main {
     justify-content: center;
     align-items: center;
     gap: 20px;
-    width: 100%;
+    max-width: 100%;
     background-image: linear-gradient(-60deg, rgba(17, 160, 174, 1) 50%, rgba(69, 226, 215, 1) 100%);
     color: white;
     padding: 20px;
@@ -488,13 +521,27 @@ main {
 }
 
 .container-datos-contacto {
-
+    
     display: flex;
     gap: 100px;
     align-items: center;
     text-align: center;
     justify-content: center;
 
+
+}
+
+.container-datos-contacto-ruv {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-datos-contacto-ruv h3{
+
+    margin: 0px;
 
 }
 
@@ -587,7 +634,7 @@ main {
 
 .direccion-empresa {
 
-    width: 100%;
+    max-width: 100%;
     background-color: #11a0ae;
     text-align: center;
     justify-content: center;
@@ -669,8 +716,7 @@ main {
 
 .wall {
 
-    background-color: #00757f;
-    margin: 0 200px 0 200px;
+    background-image: linear-gradient(-60deg, rgba(17, 160, 174, 1) 50%, rgba(69, 226, 215, 1) 100%);
     padding: 50px;
 
 }
@@ -712,5 +758,83 @@ main {
 .ruv-logo {
 
     display: inline-block;
+
+}
+
+#description-ic-component {
+
+    width: 100%;
+
+}
+
+/*                                  Components
+-------------------------------------------------------------------------------------- 
+*/
+
+.wall-lg {
+
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    width: 100%;
+    background-color: #11a0ae;
+    height: 100px;
+
+}
+
+/*----------------------------------------------------------------------------*/
+
+.main-container-creditos {
+
+    padding: 50px;
+
+}
+
+.container-creditos-contacto {
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+
+}
+
+.container-sucursales-estados {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #00757f;
+    border-radius: 10px;
+    width: 300px;
+    height: 150px;
+}
+
+.container-sucursales {
+
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    width: 100%;
+    height: 520px;
+    align-items: center;
+    margin-bottom: 50px;
+
+}
+
+#sucursales-estados {
+
+    background-color: #ccc;
+    border: none;
+    width: 200px;
+    text-align: center;
+    padding: 10px;
+    border-radius: 30px;
+    font-size: 13px;
+    font-weight: 900;
 
 }

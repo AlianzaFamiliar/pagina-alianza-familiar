@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles.css">
+    <title>Sucursales</title>
+</head>
+<body>
+    
+    <header>
+        <iframe src="../../Components/navbar.html" frameborder="0" id="navbar"></iframe>
+    </header>
+    <main>
+
+        <div class="container-sucursales">
+
+            <p class="size-md color-primary weight">
+                Nuestras sucursales se encuentran laborando de lunes a viernes de 9:00 a 18:00 hrs.
+            </p>
+
+            <div class="container-sucursales-estados">
+
+           
+                <select name="sucursales-estados" id="sucursales-estados" onchange="mostrarSucursales(this)">
+                    <option value="0" disabled selected>Estados</option>
+    
+                </select>
+    
+            </div>
+
+        </div>
+        
+
+    </main>
+    <footer>
+        <iframe src="/Components/footer-alianza.html" frameborder="0" id="footer"></iframe>
+    </footer>
+
+    <script src="/scripts/estados.js"></script>
+</body>
+</html>

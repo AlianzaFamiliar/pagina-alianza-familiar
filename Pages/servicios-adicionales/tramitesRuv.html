@@ -14,10 +14,10 @@
 
     <main>
 
-        <div>
+        <div class="main-container-creditos">
             <div class="container-description-ruv">
                 <h2 class="weight size-lg color-secondary">Te apoyamos en la gestión y trámites</h2>
-
+            <br>
             <p>
                 Las empresas constructoras que venden sus viviendas a través del infonavit, Fovissste o que <br>
                 construyen con crédito puente tienen el compromiso de registrar su empresa y viviendas a <br>
@@ -35,12 +35,83 @@
 
         </div>
 
-        <div container-contacto-des>
+        <div class="container-datos-contacto-ruv">
 
             <h3 class="weight size-lg color-secondary">
                 Déjanos tus datos <br>
                 Te atendemos con gusto
             </h3>
+
+            <div>
+                <div class="container-form">
+
+                    <form action="" id="form">
+
+                        <div>
+                            <label for="nombre" class="label-input-main">Nombre Completo</label>
+                            <input type="text" name="nombre" id="nombre" placeholder="Introducir Nombre"
+                                class="input-main" required>
+                        </div>
+
+                        <div>
+
+                            <label for="correo electronico" class="label-input-main">Correo electronico</label>
+                            <input type="email" name="correo electronico" id="correo-electronico"
+                                placeholder="Introducir Correo Electrónico" class="input-main" required>
+
+                        </div>
+
+                        <div>
+
+                            <label for="telefono" class="label-input-main">Telefono</label>
+                            <input type="number" name="telefono" id="telefono" placeholder="Introducir celular"
+                                class="input-main" required>
+
+                        </div>
+
+                        <div>
+
+                            <label for="curp" class="label-input-main">Curp (opcional)</label>
+                            <input type="text" name="curp" id="curp" placeholder="Introducir CURP (opcional)"
+                                class="input-main">
+
+                        </div>
+
+                        <div>
+
+                            <label for="estado" class="label-input-main">Estado</label>
+                            <select name="estado" id="Estado" class="input-main" required placeholder="Estado">
+
+                            </select>
+
+                        </div>
+
+                        <div>
+
+                            <input type="radio" name="tipo-fovissste" id="tipo-fovissste" class="input-main-radio">
+                            <label for="tipo-fovissste">Crédito FOVISSSTE</label>
+
+                            <input type="radio" name="tipo-infonavit" id="tipo-infonavit" class="input-main-radio">
+                            <label for="tipo-infonavit">Crédto INFONAVIT</label>
+
+                            <input type="radio" name="tipo-bancario" id="tipo-bancario" class="input-main-radio">
+                            <label for="tipo-bancario">Crédito Bancario</label>
+
+                        </div>
+
+                        <div class="checkbox-container">
+
+                            <input type="checkbox" name="terminos-condiciones" id="terminos-condiciones">
+                            <label for="terminos-condiciones">
+                                Acepto los términos y condiciones <br> de la política de protección de datos.
+                            </label>
+
+                        </div>
+
+                        <button type="submit" id="btn-enviar-form">Enviar</button>
+                    </form>
+                </div>
+            </div>
 
             
 
