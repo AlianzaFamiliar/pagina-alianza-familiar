@@ -61,7 +61,7 @@
             </div>
             <div class="description">
                 
-                <iframe src="/Components/description-ic.html" frameborder="0" id="description-ic-component"></iframe>
+                <iframe src="/Components/description-ic.html" frameborder="0" id="description-ic-component" id = "frame-ic"></iframe>
                 <div class="line-servicios">
 
                     <div class="line-img-servicios">
@@ -101,7 +101,7 @@
 
                 <div class="description-footer">
 
-                    <img src="Assets/todos-los-tramites-son-gratuitos.png" alt="Todos los tramites son gratuitos">
+                    <img src="Assets/todos-los-tramites-son-gratuitos.png" alt="Todos los tramites son gratuitos" id="img-todos-tramites">
 
                 </div>
 
@@ -127,13 +127,13 @@
 
                         <form action="" id="form">
 
-                            <div>
+                            <div class="container-input-form">
                                 <label for="nombre" class="label-input-main">Nombre Completo</label>
                                 <input type="text" name="nombre" id="nombre" placeholder="Introducir Nombre"
                                     class="input-main" required>
                             </div>
 
-                            <div>
+                            <div class="container-input-form">
 
                                 <label for="correo electronico" class="label-input-main">Correo electronico</label>
                                 <input type="email" name="correo electronico" id="correo-electronico"
@@ -141,7 +141,7 @@
 
                             </div>
 
-                            <div>
+                            <div class="container-input-form">
 
                                 <label for="telefono" class="label-input-main">Telefono</label>
                                 <input type="number" name="telefono" id="telefono" placeholder="Introducir celular"
@@ -149,7 +149,7 @@
 
                             </div>
 
-                            <div>
+                            <div class="container-input-form">
 
                                 <label for="curp" class="label-input-main">Curp (opcional)</label>
                                 <input type="text" name="curp" id="curp" placeholder="Introducir CURP (opcional)"
@@ -157,7 +157,7 @@
 
                             </div>
 
-                            <div>
+                            <div class="container-input-form">
 
                                 <label for="estado" class="label-input-main">Estado</label>
                                 <select name="estado" id="Estado" class="input-main" required placeholder="Estado">
@@ -166,21 +166,25 @@
 
                             </div>
 
-                            <div>
+                            <div class="container-input-form">
 
-                                <input type="radio" name="tipo-fovissste" id="tipo-fovissste" class="input-main-radio">
-                                <label for="tipo-fovissste">Crédito FOVISSSTE</label>
-
-                                <input type="radio" name="tipo-infonavit" id="tipo-infonavit" class="input-main-radio">
-                                <label for="tipo-infonavit">Crédto INFONAVIT</label>
-
-                                <input type="radio" name="tipo-bancario" id="tipo-bancario" class="input-main-radio">
-                                <label for="tipo-bancario">Crédito Bancario</label>
-
+                                <div class="container-input-radio">
+                                    <input type="radio" name="tipo-fovissste" id="tipo-fovissste" class="input-main-radio">
+                                    <label for="tipo-fovissste">Crédito FOVISSSTE</label>
+                                </div>
+                                <div class="container-input-radio">
+                                    <input type="radio" name="tipo-infonavit" id="tipo-infonavit" class="input-main-radio">
+                                    <label for="tipo-infonavit">Crédto INFONAVIT</label>
+                                </div>
+                                <div class="container-input-radio">
+                                    <input type="radio" name="tipo-bancario" id="tipo-bancario" class="input-main-radio">
+                                    <label for="tipo-bancario">Crédito Bancario</label>
+                                </div>
+                                
                             </div>
 
                             <div class="checkbox-container">
-
+                                
                                 <input type="checkbox" name="terminos-condiciones" id="terminos-condiciones">
                                 <label for="terminos-condiciones">
                                     Acepto los términos y condiciones <br> de la política de protección de datos.
@@ -196,7 +200,7 @@
                         <div class="container-nuestros-datos">
 
                             <img src="Assets/ubicacion.png" alt="Simbolo de ubicación" class="container-img-contacto">
-                            <p class="color-primary size-md">
+                            <p class="color-primary size-md weight">
                                 C. Villa Nicolás Romero, 12, Conjunto San Miguel, 
                                 <br>
                                 53010, Naucalpan de Juárez, México.
@@ -207,7 +211,7 @@
                         <div class="container-nuestros-datos">
 
                             <img src="Assets/telefono.png" alt="telefono">
-                            <p class="color-primary size-md">
+                            <p class="color-primary size-md weight">
                                 55 5914 8503/04 ext. 102
                                 55 6477 5200 
                             </p>
@@ -217,7 +221,7 @@
                         <div class="container-nuestros-datos">
 
                             <img src="Assets/mail.png" alt="Sobre postal">
-                            <p class="color-primary size-md">
+                            <p class="color-primary size-md weight">
                                 Alianza.comercial@alianzafamiliar.mx
                             </p>
                         </div>

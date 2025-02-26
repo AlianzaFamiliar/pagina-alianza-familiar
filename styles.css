@@ -1,5 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
+footer {
+
+    margin: 0;
+    padding: 0;
+
+}
 
 #navbar {
     width: 100%;
@@ -9,7 +15,7 @@
 #footer {
 
     width: 100%;
-    height: 90px;
+    max-height: 130px;
 
 }
 
@@ -836,5 +842,167 @@ hr {
     border-radius: 30px;
     font-size: 13px;
     font-weight: 900;
+
+}
+
+/*
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+medias querys main
+
+*/
+
+@media (max-width: 376px) {
+
+    .main-container {
+
+        flex-direction: column;
+        gap: 20px;
+
+    }
+
+    .container-title {
+
+        width: 100%;
+        gap: 20px;
+
+    }
+
+    .container-creditos {
+
+        gap: 10px;
+
+    }
+
+    .logo-creditos {
+
+        width: 100px;
+
+    }
+
+    .container-bancos {
+
+        width: 95%;
+    }
+
+    .container-img-bancos {
+
+        gap: 5px;
+    }
+
+    .container-datos-contacto{
+
+        gap: 10px;
+        flex-direction: column;
+    }
+
+    .container-form {
+
+        width: 300px;
+
+    }
+
+    .container-input-form {
+
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container-input-radio {
+
+        text-align: left;
+        width: 200px;
+        display: flex;
+        flex-direction: row;
+
+    }
+
+    .label-input-main {
+
+        width: auto;
+    }
+
+    .checkbox-container {
+        display: flex;
+        flex-direction: row;
+        gap: 5px;
+    }
+
+    .container-datos {
+
+        width: 90%;
+        height: auto;
+
+    }
+
+    .container-redes-sociales {
+
+        gap: 20px;
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    .red-social-item {
+
+        width: 300px;
+        text-align: left;
+      
+
+    }
+
+    .header-main {
+
+        margin: 0;
+    }
+
+    .container-logos-organismos {
+
+        gap: 10px;
+
+    }
+
+    .img-organismos {
+
+        width: 50px;
+    }
+
+    #description-ic-component {
+
+        height: 50px;
+    }
+
+    .size-md {
+
+        font-size: 12px;
+    }
+
+    .size-lg {
+
+        font-size: 15px;
+    }
+
+    #img-main {
+
+        width: 100%;
+        display: none;
+        
+
+    }
+
+    #img-ic {
+
+        width: 150px;
+    }
+
+    #img-todos-tramites {
+
+        
+        width: 90%;
+
+    }
 
 }
