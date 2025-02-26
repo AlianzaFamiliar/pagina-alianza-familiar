@@ -1,5 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
+
+.menu-toggle {
+    display: none;
+    font-size: 1.8em;
+    color: white;
+    cursor: pointer;
+}
+
+#logo-alianza-movil {
+
+    display: none;
+    
+}
+
 footer {
 
     margin: 0;
@@ -63,8 +77,19 @@ li {
     padding: 0;
 }
 
+.body-main {
+    
+    background-image: url("/Assets/fondo-pagina.jpg");
+
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+
 body {
 
+   
     margin: 0;
 }
 
@@ -75,6 +100,7 @@ hr {
 }
 
 .main {
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
@@ -290,7 +316,7 @@ hr {
 
 .size-md {
 
-    font-size: 27px;
+    font-size: 24px;
 
 }
 
@@ -602,7 +628,7 @@ hr {
 .img-red-social {
 
     width: 90px;
-    height: 101px;
+    height: auto;
     display: inline-block;
 
 }
@@ -845,6 +871,19 @@ hr {
 
 }
 
+.checkbox-container {
+
+    display: flex;
+    flex-direction: row;
+}
+
+.container-input-form{
+
+    text-align: left;
+
+}
+
+
 /*
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -852,7 +891,113 @@ medias querys main
 
 */
 
+@media (max-width: 1024px) {
+
+
+    .size-md {
+
+        font-size: 18px;
+    }
+
+    .container-datos-contacto {
+
+        align-items: start;
+        gap: 30px;
+    }
+
+    .container-datos {
+
+        width: 450px;
+    }
+
+    .container-form {
+
+        width: 300px;
+
+    }
+
+    .red-social-item {
+
+        font-size: 14px;
+    }
+
+    .img-red-social{
+
+        width: 60px;
+        height: auto;
+
+    }
+
+    .checkbox-container {
+
+        display: flex;
+        flex-direction: row;
+    }
+
+    .container-input-radio {
+
+        display: flex;
+    }
+
+    .container-input-form {
+    
+        justify-content: center;
+    }
+
+    .label-input-main {
+
+        width: auto;
+    }
+
+    .main-container {
+
+        gap: 0;
+        justify-content: left;
+    }
+
+    .container-title {
+
+        width: 400px;
+        align-items: start;
+    }
+
+    #img-main {
+
+        width: 400px;
+        height: auto;
+    }
+
+    .header-main {
+
+        gap: 0;
+    }
+
+    .container-logo {
+        display: none;
+    }
+
+    .container-redes {
+
+        display: none;
+    }
+
+
+}
+
+
 @media (max-width: 376px) {
+
+    .main {
+
+        padding-top: 50px;
+
+    }
+
+    .main-alt {
+
+        padding-top: 50px;
+
+    }
 
     .main-container {
 
@@ -863,6 +1008,9 @@ medias querys main
 
     .container-title {
 
+        align-items: center;
+        justify-content: left;
+        text-align: center;
         width: 100%;
         gap: 20px;
 
@@ -892,6 +1040,7 @@ medias querys main
 
     .container-datos-contacto{
 
+        align-items: center;
         gap: 10px;
         flex-direction: column;
     }
@@ -1003,6 +1152,102 @@ medias querys main
         
         width: 90%;
 
+    }
+
+    /*----------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+    .main-container-creditos {
+
+        max-width: 100%;
+        padding: 20px;
+    }
+
+    .img-flex {
+
+        width: 90%;
+    }
+
+    .wall {
+
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+
+    }
+
+    .container-porcentajes {
+
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+
+    }
+
+    /* -----------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+    .container-logo {
+
+        display: inline-block;
+        position: absolute;
+        top: 6px;
+        z-index: 2;
+    }
+
+    .nav-items {
+
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 59px;
+        left: 0;
+        background-color: #11a0ae;
+        text-align: center;
+        gap: 10px;
+        padding: 10px 0 10px 0;
+
+    }
+
+    #navbar {
+
+        z-index: 1;
+        position: absolute;
+        height: 360px;
+
+    }
+
+    .container-redes {
+
+        display: none;
+
+    }
+
+    .menu-toggle {
+        display: inline-block;
+    }
+
+    .nav-active {
+        display: flex;
+    }
+
+    .nav {
+
+        border-radius: 0;
+        justify-content: left;
+
+    }
+
+    #logo-alianza {
+        display: none;
+        height: 50px;
+        width: auto;
+    }
+
+    #logo-alianza-movil {
+
+        display: block;
+        height: 50px;
+        width: auto;
     }
 
 }

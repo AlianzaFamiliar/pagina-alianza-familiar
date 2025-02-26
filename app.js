@@ -7,3 +7,14 @@ function redirigir(select) {
         window.top.location.href = url;
     }
 }
+
+document.addEventListener("DOMContentLoaded", function () {
+    const menuToggle = document.getElementById("menu-toggle");
+    const navLinks = document.querySelector(".nav-items");
+
+    menuToggle.addEventListener("click", function () {
+        
+        navLinks.classList.toggle("nav-active");
+    });
+});
+
