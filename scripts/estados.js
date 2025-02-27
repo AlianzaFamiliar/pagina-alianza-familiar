@@ -671,10 +671,22 @@ const SUCURSALES = {
 
 function mostrarSucursales (estado) {
 
-    let estadoseleccionado = estado.value
-    let sucursalEstado = SUCURSALES.estadoseleccionado;
-    console.log(estadoseleccionado)
-    console.log(sucursalEstado);
+    sucursalesDinamicas = document.querySelector(".sucursales-dinamicas");
+    let estadoSeleccionado = estado.value;
+    let sucursalesEstado = SUCURSALES[estadoSeleccionado];
+    
+    for (const sucursal of sucursalesEstado) {
+
+        console.log(sucursal.sucursal);
+        console.log(sucursal.ejecutivo);
+        console.log(sucursal.Telefono);
+        console.log(sucursal.email);
+        console.log(sucursal.direccion);
+        console.log(sucursal.maps);
+    }
+    console.log(estadoSeleccionado);
+
+    
 
 }
 
